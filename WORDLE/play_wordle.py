@@ -14,7 +14,7 @@ def main():
     while wordle.can_attempt:
         x = input("\nType your guess: ")
 
-        if len(x) != wordle.WORD_LENGTH:
+        if len(x) != wordle.WORD_LENGTH :
             print(
                 Fore.RED
                 + f"Word must be {wordle.WORD_LENGTH} characters long!"
