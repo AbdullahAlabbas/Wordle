@@ -2,7 +2,7 @@ words = []
 letter="a"
 position=1
 wordlist=[]
-with open('WORDLE-ANSWERS/fiveLetters.txt') as w:
+with open("WORDLE-ANSWERS/fiveLetters.txt") as w:
   words = w.readlines()
 
 while letter!='':
