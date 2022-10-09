@@ -12,7 +12,7 @@ def main():
     wordle = Wordle(secret)
 
     while wordle.can_attempt:
-        x = input("\nType your guess: ")
+        x = input("\nType your guess: ").upper()
 
         if len(x) != wordle.WORD_LENGTH :
             print(
