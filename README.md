@@ -67,7 +67,7 @@ class Wordle:
         return self.remaining_attempts > 0 and not self.is_solved
 ```
 
-### 3. `main.py`
+### 3. `play_wordle.py`
 
 This file contains the main function and additional helper functions to run the game. It handles user interaction, loads the word set, and displays the game results.
 
@@ -174,7 +174,7 @@ if __name__ == "__main__":
 3. Prepare your word list file at `data/wordle_words.txt`.
 4. Run the game:
    ```bash
-   python main.py
+   python play_wordle.py
    ```
 
 ## Game Instructions
@@ -186,5 +186,15 @@ if __name__ == "__main__":
    - Letters that are in the word but in the wrong position will be highlighted in yellow.
    - Incorrect letters will be displayed in white.
 4. Keep guessing until you solve the word or run out of attempts.
+
+## Solver
+
+`solver.py` helps you solve a real Wordle puzzle. Tell it each letter you know and its color (`G` green, `Y` yellow, `B` gray), plus its position for green or yellow, and it narrows `data/wordle_words.txt` down to the words that still fit. Press Ctrl+C to quit.
+
+```bash
+python solver.py
+```
+
+![Solver example](https://user-images.githubusercontent.com/106891021/197487062-ff13fc2d-90c1-44ce-9af9-86a4226c31b2.png)
 
 Enjoy the game!
